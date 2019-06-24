@@ -1,0 +1,82 @@
+@media (max-width: 1400px) {
+    .container{
+        width: 98%;
+    }
+    .common_three{
+        width: 38%;
+    }
+    .details{width: 24%}
+    .plans{width: 76%;}
+    .assistance{width: 24%;}
+    .best_mid_top_lst{
+        width: 70%;
+    }
+    .best_mid_top_rst{}
+    .best_lst{width: 14%;}
+    .best_mid{width: 67%;}
+    .best_rst{width: 19%;}
+}
+@media (max-width: 1200px) {
+    .best_plan_top{flex-wrap: wrap;}
+    .best_mid{width: 100%; order: 3; margin-top: 15px;}
+    .best_lst{order: 1; width: 50%;  margin: 0; text-align: left;}
+    .best_rst{order: 2; width: 50%;  margin: 0; text-align: right;}
+    .buy_plan a{max-width: 150px;}
+    .common_item{flex-wrap: wrap;}
+    .common_item .item_lst{width: 100%;}
+    .common_item .item_rst{width: 100%; margin: 0;}
+    .best_lst{padding-top: 15px;}
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 992px) {
+    .plans{width: 75%;}
+    .assistance{width: 25%;}
+    .table_head ul{
+        padding: 0 15px;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {    
+    .container{max-width: 95%;}
+    .first_section, .second_section, .top_header{flex-wrap: wrap;}
+    .logo{width: 100%; text-align: center;}
+    .menu{width: 100%; text-align: center;}
+    .main_menu{display: block; margin: 15px 0 0;}
+    .main_menu li{display: inline-block;}
+    .main_menu li a{display: inline-block;}
+    .main_menu li a i{position: static; vertical-align: middle;}
+
+
+    .common_three{width: 100%; margin: 0 0 10px 0;}
+    .common_item .item_rst .item_with_details ul li:nth-child(even){
+        text-align: right;
+    }
+    .item3 .item_rst .item_with_details ul li:nth-child(even){
+        text-align: left;
+    }
+    .plans{width: 100%; margin: 0;}
+    .assistance{width: 100%; margin: 0;}
+    .call_me{text-align: center;}
+    .call_me a{max-width: 200px; display: inline-block;}
+}
+@media (max-width: 600px) {
+    .best_plan_top{padding: 10px 15px;}
+    .filter_by a{min-width: 100px;}
+    .border_box{margin: 0 15px;}
+    .best_mid_top_rst .policy_boucher a{font-size: 11px;}
+    .best_mid_top_rst .maternity_cover a{font-size: 11px;}
+
+    .best_mid_bottom{flex-wrap: wrap;}
+    .best_mid_bottom_comm{width: 31%;}
+    .best_mid_bottom_chi3{border: 0;}
+    .best_mid_bottom_chi4{width: 100%; margin: 10px 0 0; border-top: 2px solid #ddd;}
+    .table_head ul{padding: 0 5px;}
+    .table_head ul li{font-size: 12px;}
+    .best_plan_bpttom{padding: 4px 15px;}
+    .best_plan_bpttom ul li{font-size: 10px;}
+
+    .buy_plan a{padding: 3px 10px;}
+}
+@media (max-width: 480px) {}

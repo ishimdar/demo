@@ -1,0 +1,23 @@
+@import './bootstrap.min.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.form-group .react-datepicker__input-container, .form-group .react-datepicker-wrapper{display: block;}
+
+.inpu_radio{padding: 0;}
+.inpu_radio li{    display: inline-block; margin: 0 20px 0 0;}
+.inpu_radio li label{}
+.inpu_radio li label input{margin-left: 0; position: static;}
+.errorMsg{color: red;}
