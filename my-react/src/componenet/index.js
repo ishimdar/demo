@@ -15,8 +15,7 @@ class ParentComponent extends Component {
         });
     }
 
-    render(){
-        console.log('this.state.loginFormShow', this.state.loginFormShow);        
+    render(){        
         return(
             <>
                 {

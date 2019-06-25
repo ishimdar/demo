@@ -45,13 +45,10 @@ class DetailsForm extends Component {
                 ispancard: false,
                 isnationality: false,
                 ispolicy_tenure: false
-            })
-            console.log('Yes');
-            console.log('this.state', this.state);
+            })                        
             alert('Your form submited succesfully');
 
-        }else{
-            console.log('No');
+        }else{            
             if(this.state.salutation === undefined){
                 this.setState({
                     isSalutation: true
@@ -205,17 +202,14 @@ class DetailsForm extends Component {
         }   
     }    
 
-    onChangeEventDate = (date, e) => {
-        // console.log('e', e.target.name);
-        console.log('date', date);
+    onChangeEventDate = (date, e) => {        
         this.setState({
             date_of_birth: date                    
         })
     }
 
 
-    render() {
-        console.log('GLOBAL_JSON_DATA', GLOBAL_JSON_DATA);
+    render() {        
         let salutation = null;
         let gender = null;
         let educational = null;

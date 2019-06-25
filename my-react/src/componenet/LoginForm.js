@@ -16,8 +16,7 @@ class LoginForm extends Component {
 
     componentWillMount() {
         axios.get(`https://hello-world-ahaamd.firebaseio.com/loginList.json`)
-            .then((res) => {
-                // console.log('res', res);    
+            .then((res) => {                
                 this.modifyUserDataResponse(res);
                 return res;
             })
@@ -28,16 +27,14 @@ class LoginForm extends Component {
 
     modifyUserDataResponse = (getUserRes) => {
         if (getUserRes.data !== null) {
-            let userData = getUserRes.data;
-            // console.log(Object.keys(userData));
+            let userData = getUserRes.data;            
             let modifyData = Object.keys(userData).map((item) => {
                 return userData[item];
             })
 
             this.setState({
                 userInformation: modifyData
-            });
-            // console.log('modifyData', modifyData);            
+            });                       
         }
     }
 
@@ -45,24 +42,19 @@ class LoginForm extends Component {
 
     onSubmitLoginForm = (e) => {
         e.preventDefault();                
-        let filterLogin = null;
-        debugger;
+        let filterLogin = null;        
         if(this.state.userInformation !== null){
             filterLogin = this.state.userInformation.filter( (item) => {
                 return item.userEmail === this.state.userEmail && item.password === Number(this.state.userPassword);
-            });
-            console.log('filterLogin', filterLogin);
+            });            
             if(filterLogin.length === 0){
                 this.setState({
                     loginSucces: true
                 });
-            }else{
-                // SHOW_LOGIN_FORM.loginFormShow = false;
+            }else{                
                 this.hideLoginComponent();
-            }
-            // return filterLogin;
-        }
-        // console.log('SHOW_LOGIN_FORMSubmit', SHOW_LOGIN_FORM);        
+            }            
+        }                
     }
 
     hideLoginComponent = () => {
@@ -70,13 +62,11 @@ class LoginForm extends Component {
     }
 
     onChangeEvent = (e) => {
-        if (e.target.name === 'userEmail') {
-            // console.log('e.target', e.target.name);
+        if (e.target.name === 'userEmail') {            
             this.setState({
                 userEmail: e.target.value
             });
-        } else {
-            // console.log('e.target', e.target.name);
+        } else {            
             this.setState({
                 userPassword: e.target.value
             });
